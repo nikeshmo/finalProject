@@ -3,185 +3,246 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="logoBlue.png">
+<title>Jarhead</title>
 
 
 </head>
 
-<body><div style="height: 20px;"></div>
+<body>
+
+<div style="height: 20px;"></div>
 <div class="header" style="position: fixed; margin-top: -40px;">
-  <p style="font-size: 15px; "><a href="index.html"><b>Log out</a></b><p>
+  <div class="searchCont"><img src="logoIcon.png" height="20px" style="vertical-align: middle;">
+    <input type="text" placeholder=" Search.." name="search">
+    <button type="submit"><img src="search.png" width="10px;"></button>
+  </div>
+
+  <p style="font-size: 17px; margin-top: 13px;">
+  <img src="pbHaris.jpg" alt="Profilbilde" style="border-radius: 50px; width: 20px; vertical-align: middle; margin-top: -4px;"><b> Gregor&nbsp;&nbsp;|&nbsp;&nbsp;
+  <img src="people.png" height="20px" style="margin-top: -5px; vertical-align: middle;">&nbsp;
+  <img src="chat.png" height="20px" style="margin-top: -5px; vertical-align: middle;">&nbsp;
+  <img src="settings.png" height="20px" style="margin-top: -5px; vertical-align: middle;">
+  &nbsp;&nbsp;|&nbsp;&nbsp;<a href="index.html">Log out</a></b><p>
 </div>
 
+
+
 <div class="row">
-  <div class="col-2 col-s-3" style="height: 350px;">
+  <div class="col-2 col-s-3" style="height: 370px;">
     <div class="mobilNav">
-      <ul><center><h1></h1></center>
-        <li class="active"> Side</li>
-        <li> Side</li>
-        <li> Side</li>
-        <li> Side</li>
-        <li> Side</li>
-        <li> Side</li>
-        <li> Side</li>
+      <ul><center><h1>Gregor Fiske</h1></center>
+        <li><input type="text" placeholder=" Search.." name="search" style="width: 90%;">
+        <button type="submit"><img src="search.png" width="10px;"></button></li>
+        <li class="active"><img src="Home.png" style="width: 15px;"> Home</li>
+        <li><img src="Messages.png" style="width: 15px;"> Chat</li>
+        <li><img src="Videos.png" style="width: 15px;"> Videos</li>
+        <li><img src="Groups.png" style="width: 15px;"> Groups</li>
+        <li><img src="Events.png" style="width: 15px;"> Events</li>
+        <li><img src="Apps.png" style="width: 15px;"> Apps</li>
+        <li><img src="Games.png" style="width: 15px;"> Games</li>
       </ul>
-    </div></div>
+    </div>
+  </div>
 
   <div class="col-3 col-s-4 menu" style="position: fixed; padding-right: 5px; padding-top: 25px; margin-left: -10px;">
-    <ul><center><h1>Brukernavn</h1></center>
-      <li class="active">  Side</li>
-      <li> Side</li>
-      <li> Side</li>
-      <li> Side</li>
-      <li> Side</li>
-      <li> Side</li>
-      <li> Side</li>
+    <ul><h1 style="padding-left: 10px; font-size: 25px;">Gregor Fiske</h1>
+      <li class="active"><img src="Home.png" style="width: 15px;"> Home</li>
+      <li><img src="Messages.png" style="width: 15px;"> Chat</li>
+      <li><img src="Videos.png" style="width: 15px;"> Videos</li>
+      <li><img src="Groups.png" style="width: 15px;"> Groups</li>
+      <li><img src="Events.png" style="width: 15px;"> Events</li>
+      <li><img src="Apps.png" style="width: 15px;"> Apps</li>
+      <li><img src="Games.png" style="width: 15px;"> Games</li>
     </ul>
   </div>
 
-  <div class="col-7 col-s-6" style="padding-top: 25px;">
+  <div class="col-7 col-s-6" style="padding-top: 25px; height: auto;">
 
     <div class="main1" style="height: auto">
       <img src="pbHaris.jpg" alt="Profilbilde" height="60px" align="top" style="border-radius: 50px;">
       <label for="comments" style="display: none;">Empty</label>
-      <textarea id="comments"name="comments" title="publish" style=" padding-left:50px; border: none; margin-left: 15px; margin-top: 10px; overflow:hidden; resize:none; width:90%;height:80px; padding:2%;font-size:1.1em;" >Post an update....</textarea>
+      <textarea id="comments" name="comments" title="publish" placeholder="Post an update...." style="padding-left:50px; border: none; margin-left: 15px; margin-top: 10px; overflow:hidden; resize:none; width:90%;height:80px; padding:2%;font-size:1.1em;" ></textarea>
       <hr>
-      <div class="pIcon"><img src="picture.png" height="25px"> Bilde/video</div> <div class="pIcon"><img src="smiley.png" height="25px"> Aktivitet</div>
-      <button>Publish</button><br>
+      <div class="pIcon"><img class="icons" src="picture.png" height="25px"> Bilde/video</div> <div class="pIcon"><img src="smiley.png" class="icons" height="25px"> Aktivitet</div>
+      <div class="publishIcon">Publish</div>
+      <br>
     </div>
 
 
     <div class="main1">
-      <h1>Home</h1>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales odio nisi, a fringilla metus mattis nec. Ut at velit ullamcorper, efficitur dolor egestas, commodo enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec iaculis efficitur lacus, at ultricies diam. Integer congue leo ac ex malesuada hendrerit. Quisque eget ipsum turpis. Nunc in malesuada arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum viverra ex vitae porttitor pharetra. Sed sem nisi, ultrices vestibulum lorem nec, rutrum convallis quam. In iaculis volutpat congue. Aliquam consectetur pellentesque neque, sit amet molestie enim rutrum sed. Donec in cursus urna, quis vulputate orci. Nam et euismod ipsum. Donec vel varius diam, in fringilla ligula. Cras pulvinar interdum fringilla.
+      <div class="mDiv1" style="float: left; width: 50%;">
+        <h1>Lorem ipsum</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales odio nisi, a fringilla metus mattis nec. Ut at velit ullamcorper, efficitur dolor egestas, commodo enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+      </div>
+      <div class="mDiv2" style="float: right; width: 50%;"><img src="picture.png" style="padding-left: 10%; padding-right: 10%; width: 100%; max-height: 90%;">
+      </div>
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales odio nisi, a fringilla metus mattis nec. Ut at velit ullamcorper, efficitur dolor egestas, commodo enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec iaculis efficitur lacus, at ultricies diam. Integer congue leo ac ex malesuada hendrerit. Quisque eget ipsum turpis. Nunc in malesuada arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum viverra ex vitae porttitor pharetra. Sed sem nisi, ultrices vestibulum lorem nec, rutrum convallis quam. In iaculis volutpat congue. Aliquam consectetur pellentesque neque, sit amet molestie enim rutrum sed. Donec in cursus urna, quis vulputate orci. Nam et euismod ipsum. Donec vel varius diam, in fringilla ligula. Cras pulvinar interdum fringilla.
-
-      <br></p>
+      </p>
     </div>
+
     <div class="main1">
-      <h1>Title</h1>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales odio nisi, a fringilla metus mattis nec. Ut at velit ullamcorper, efficitur dolor egestas, commodo enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec iaculis efficitur lacus, at ultricies diam. Integer congue leo ac ex malesuada hendrerit. Quisque eget ipsum turpis. Nunc in malesuada arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum viverra ex vitae porttitor pharetra. Sed sem nisi, ultrices vestibulum lorem nec, rutrum convallis quam. In iaculis volutpat congue. Aliquam consectetur pellentesque neque, sit amet molestie enim rutrum sed. Donec in cursus urna, quis vulputate orci. Nam et euismod ipsum. Donec vel varius diam, in fringilla ligula. Cras pulvinar interdum fringilla.
-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales odio nisi, a fringilla metus mattis nec. Ut at velit ullamcorper, efficitur dolor egestas, commodo enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec iaculis efficitur lacus, at ultricies diam. Integer congue leo ac ex malesuada hendrerit. Quisque eget ipsum turpis. Nunc in malesuada arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum viverra ex vitae porttitor phaTretra. Sed sem nisi, ultrices vestibulum lorem nec, rutrum convallis quam. In iaculis volutpat congue. Aliquam consectetur pellentesque neque, sit amet molestie enim rutrum sed. Donec in cursus urna, quis vulputate orci. Nam et euismod ipsum. Donec vel varius diam, in fringilla ligula. Cras pulvinar interdum fringilla.
-
+      <div class="mDiv1" style="float: left; width: 50%;">
+        <h1>Quisque eget</h1>
+      Donec iaculis efficitur lacus, at ultricies diam. Integer congue leo ac ex malesuada hendrerit. Quisque eget ipsum turpis. Nunc in malesuada arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum viverra ex vitae porttitor phaTretra. Sed sem nisi, ultrices vestibulum lorem nec, rutrum convallis quam. In iaculis volutpat congue. Aliquam consectetur pellentesque neque, sit amet molestie enim rutrum sed. Donec in cursus urna, quis vulputate orci. 
+      </div>
+      <div class="mDiv2" style="float: right; width: 50%;"><img src="picture.png" width="100%" style="padding-left: 10%; padding-right: 10%; width: 100%; ">
+      </div>
  
 
       <br></p>
     </div>
   </div>
 
-  <div class="col-2 col-s-2" style=" position: fixed; left: 83.5%;">
+  <div class="col-2 col-s-2" style="position: fixed; left: 83.5%;">
     <div class="aside"><h3>Chat</h3>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Vegard Østrem</p>
       </div>
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Alexander Sørhaug</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Kardis Hasfjord</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Ester Gudrund Eriksen</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Ørjan Etternavn</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Tina Guttormsen</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Sigrid Simonsen</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Charlotte Bergheim</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Vidar Johansen</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Bjørn Moe</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Randi Severinsen</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Espen Løberg</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Ingrid Knudsen</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Jan Solberg</p>
       </div>
 
       <div class="chatProfil">
         <span class="dot"></span>
         <div class="chatBilde">
         </div>
-        <p class="pbTekst">Fornavn Etternavn</p>
+        <p class="pbTekst">Malin Dybvik</p>
       </div>
 
+      <div class="chatProfil">
+        <span class="dot"></span>
+        <div class="chatBilde">
+        </div>
+        <p class="pbTekst">Andreas Høiberg</p>
+      </div>
+
+      <div class="chatProfil">
+        <span class="dot"></span>
+        <div class="chatBilde">
+        </div>
+        <p class="pbTekst">Tone Rasmussen</p>
+      </div>
+
+      <div class="chatProfil">
+        <span class="dot"></span>
+        <div class="chatBilde">
+        </div>
+        <p class="pbTekst">Per Andersen</p>
+      </div>
+
+      <div class="chatProfil">
+        <span class="dot"></span>
+        <div class="chatBilde">
+        </div>
+        <p class="pbTekst">Brit Espeland</p>
+      </div><br><br><br>
 
     </div>
   </div>
-</div>
 
+  <input type="checkbox" id="pToggle">
+  <div class="popup" style="position: fixed;  width: 100%; top: 80%; bottom: 0; left: 0; right: 0; padding: 20px;">
+    <label for="pToggle" style="position: absolute; top: 0; right: 0; margin-right: 10px; margin-top: 15px;">I accept<br>and understand<br>the conditions</label>
+    <label for="pToggle" style="position: absolute; top: 90px; right: 0; margin-right: 10px; margin-top: 15px;">Read more</label>
+    <div class="popupText" style="margin-right: 150px;">
+      This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup.This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup.This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup.This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup.This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup.This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup.This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup.This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. This is a popup. 
+    </div>
+  </div>
+
+
+</div>
 <div class="footer">
   <p>Copyright © 1998 Facebook 2.0</p>
 </div>
