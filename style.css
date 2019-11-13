@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+a { 
+  color: inherit;
+  text-decoration: none;
+} 
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  overflow-y:scroll;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+  background: linear-gradient(180deg, rgba(246,246,246,1) 0%, rgba(204,204,204,1) 100%);
+  background-attachment:fixed;
+}
+
+.header {
+    background: blue;
+  /*background: linear-gradient(128deg, rgba(251,225,128,1) 0%, rgba(221,247,235,1) 100%);*/
+  text-align: right;
+  color: #ffffff;
+  padding: 6px;
+  left:0;
+  right: 0;
+  height: 45px;
+  padding-right: 45px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+
+}
+
+.mobilNav ul{
+  list-style-type: none;
+  background: linear-gradient(142deg, rgba(242,195,139,1) 0%, rgba(230,108,119,1) 43%, rgba(172,85,120,1) 100%);
+  border-radius: 10px;
+  padding:1px;
+  padding-bottom: 55px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+}
+.mobilNav li{
+  padding: 15px;
+  background-color: rgba(255,255,255,0.7);
+  color: black;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.12), 0 0px 1px rgba(0,0,0,0.24);
+  margin-right: -1px;
+  margin-left: -1px;
+}
+.mobilNav li:hover {
+  background-color: #FBE180;
+}
+.mobilNav li.active {
+  background-color: #fbe180;
+}
+.mobilNav li:active {
+  background-color: #016672;
+}
+
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  border-radius: 0 10px 10px 0;
+  padding:1px;
+  padding-top: 25px;
+  padding-bottom: 55px;
+  /*box-shadow: 0 3px 4px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);*/
+  height: 100vh;
+  margin-right: 10%;
+  margin-left:20%;
+}
+
+.menu li {
+  padding: 5px;
+  padding-left: 20px;
+  color: black;
+  /*box-shadow: 0 0px 0px rgba(0,0,0,0.12), 0 0px 1px rgba(0,0,0,0.24);*/
+}
+
+
+.menu li:hover {
+  background-color: #FBE180;
+}
+.menu li.active {
+  background-color: rgba(255,255,255,0.7);
+}
+.menu li:active {
+  background-color: orange;
+}
+
+.mTitle {
+  padding-left: 20px;
+}
+
+.mTekst {
+  padding-left: 20px;
+}
+
+.main1 {
+  background-color: rgba(255,255,255,1);
+  padding: 45px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+
+.main1 h1 {
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+
+.main1 button {
+    margin-top: 10px;
+    float: right; 
+    margin-right: 18px;
+
+}
+
+.aside {
+  background-color: rgba(255,255,255,0.8);
+  margin-left: 15%;
+  margin-top: 6px;
+  color: black;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 100vh;
+  padding-top: 5px;
+}
+
+.aside h3 {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+
+
+.footer {
+  background-color: rgba(255,255,255,0.8);
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: -8px;
+  margin-right:-8px;
+  height: 25px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.15);
+  line-height: 27px;
+}
+
+
+[class*="col-"] {
+  width: 100%;
+  float: left;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For nettbrett og mindre enheter */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .mobilNav {display: none;}
+
+}
+@media only screen and (min-width: 968px) {
+  /* For desktop PC */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+}
+
+@media only screen and (max-width: 1250px) {
+}
+
+@media only screen and (max-width: 599px) {
+    .menu ul {display:none;}
+    .main1 {margin-left: 0;}
+    .main2 {margin-left: 0;}
+    .aside {margin: 0; margin-top: 15px;}
+
+    .aside {display: none};
+
+}
+
+
+.chatProfil {
+  width: 100%;
+  height: 50px;
+  line-height: 40px;
+  text-align: left;
+  overflow: hidden;
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.chatBilde {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-image: url("pb.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+  margin-top: 14px;
+}
+
+.pbTekst {
+  display: inline;
+  padding-left: 15px;
+}
+
+.chatProfil:hover {
+  background-color: #FBE180;
+}
+
+.pIcon {
+  display: inline;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.14);
+
+}
